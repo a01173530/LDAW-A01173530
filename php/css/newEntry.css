@@ -1,0 +1,29 @@
+#newEntryForm{
+    width: 90%;
+}
+
+.btn-primary{
+    background-color: var(--medium-bg);
+    border-color: var(--dark-bg);
+}
+
+.btn-primary:hover{
+    background-color: var(--dark-bg);
+    border-color: var(--medium-bg);
+}
+
+@media(min-width: 768px){
+
+    #newEntryForm{
+        width: 75%;
+    }
+
+}
+
+@media(min-width: 1200px){
+
+    #newEntryForm{
+        width: 50%;
+    }
+
+}

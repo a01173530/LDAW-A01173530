@@ -1,0 +1,26 @@
+#entries-list li.income {
+    background-color: rgba(80, 148, 138, 0.5);
+    color: var(--main-font-color);
+}
+
+#entries-list li.outcome {
+    background-color: rgba(173, 97, 71, 0.7);
+    color: var(--main-font-color);
+}
+
+#entries-list li .date,
+#entries-list li p.description {
+    font-size: 0.9rem;
+}
+
+#entries-list li .date {
+    min-width: 90px;
+}
+
+#entries-list li .data {
+    border-left: 1px solid var(--extra-light-bg);
+}
+
+#entries-list li .badge { 
+    background-color: var(--medium-bg);
+}

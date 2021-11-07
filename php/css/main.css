@@ -1,0 +1,118 @@
+/*************************************************
+                LAYOUT PRINCIPAL
+**************************************************/
+
+:root {
+    --dark-bg: #032436;
+    --medium-bg: #113b51;
+    --light-bg: #477187;
+    --extra-light-bg: #6f90a2;
+    --main-font-color: #ffffff;
+    --income-color: #50948a;
+    --outcome-color: #ad6147;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+        "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background-color: var(--medium-bg);
+    color: var(--main-font-color);
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+header {
+    text-align: center;
+    padding: 0;
+}
+
+header h1 {
+    padding: 25px;
+    margin: 0;
+}
+
+main, header, nav, footer {
+    max-width: 90%;
+}
+
+@media(min-width: 768px) {
+
+    main, header, nav, footer {
+        max-width: 85%;
+    }
+
+}
+
+
+
+main, header {
+    background-color: var(--light-bg);
+}
+
+main {
+    padding: 25px;
+}
+
+footer {
+    background-color: var(--dark-bg);
+    padding: 30px;
+    text-align: center;
+}
+
+/*************************************************
+                  NAV BAR
+  **************************************************/
+
+nav.navbar-light {
+    padding: 0;
+    background-color: var(--dark-bg);
+    text-align: center;
+}
+
+nav li {
+    margin: 0px 10px;
+}
+
+nav.navbar-light ul.navbar-nav li a.nav-link {
+    border-bottom: 5px solid var(--dark-bg);
+}
+
+nav.navbar-light ul.navbar-nav li.active a.nav-link {
+    border-bottom: 5px solid var(--extra-light-bg);
+}
+
+nav.navbar-light ul.navbar-nav li a.nav-link:hover,
+nav.navbar-light ul.navbar-nav li a.nav-link.active {
+    background-color: var(--extra-light-bg);
+    border-bottom: 5px solid var(--extra-light-bg);
+}
+
+nav.navbar-light button.navbar-toggler {
+    background-color: var(--extra-light-bg);
+}
+
+nav.navbar-light button.navbar-toggler:focus {
+    box-shadow: 0 0 0 1px;
+}
+
+nav.navbar-light .navbar-brand,
+nav.navbar-light button.navbar-toggler,
+nav.navbar-light ul.navbar-nav li a.nav-link:hover,
+nav.navbar-light ul.navbar-nav li a.nav-link,
+nav.navbar-light ul.navbar-nav li.active a.nav-link {
+    color: var(--main-font-color);
+}
+
+/*************************************************
+                  TERMINA NAV BAR
+  **************************************************/
+
+main h2 {
+    text-align: center;
+}
