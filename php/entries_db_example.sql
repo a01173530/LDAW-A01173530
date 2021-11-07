@@ -33,7 +33,7 @@ CREATE TABLE `categories` (
   `name` varchar(100) NOT NULL,
   `description` text,
   `type_id` bigint UNSIGNED NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `categories`
@@ -61,7 +61,7 @@ CREATE TABLE `entries` (
   `date` datetime NOT NULL,
   `receipt` varchar(50) DEFAULT NULL,
   `category_id` bigint UNSIGNED NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `entries`
@@ -81,7 +81,7 @@ CREATE TABLE `types` (
   `id` bigint UNSIGNED NOT NULL,
   `name` varchar(50) NOT NULL,
   `description` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `types`

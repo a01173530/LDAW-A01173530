@@ -66,7 +66,7 @@ Controller::index();
 
                         $type = $entry->category->getType();
                         
-                        var_dump($type["id"]);
+                        //var_dump($type["id"]);
                         
                         $class = "income";
 
