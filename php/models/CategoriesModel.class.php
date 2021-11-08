@@ -90,6 +90,23 @@ class CategoriesModel{
         
     }
 
+
+    //Guarda un objeto en la BD
+    public function save(){
+
+        //Obtener la instancia de la clase BD
+        $db = DB::getDB();
+
+        //Ejecutar la consulta usando db
+        $id = $db->insert(
+            "INSERT INTO categories(name,description,type_id) VALUES(?,?,?)",
+            [$this->name, $this->description, $this->type->id]
+        );
+
+        return $id;
+
+    }
+
     //Devuelve el listado de categorías ordenado por nombre
     public static function getCategories(){
 

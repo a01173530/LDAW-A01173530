@@ -16,12 +16,12 @@
             <li class="nav-item <?php echo( ($pageName === "newEntry") ? "active" : "" );  ?>">
                 <a class="nav-link" href="./newEntry.php">Crear Entrada</a>
             </li>
-            <li class="nav-item <?php echo( ($pageName === "newEntry") ? "active" : "" );  ?>">
-                <a class="nav-link" href="./newEntry.php"> Categoria</a>
+            <li class="nav-item <?php echo( ($pageName === "Category") ? "active" : "" );  ?>">
+                <a class="nav-link" href="./Category.php"> Categoria</a>
             </li>
 
-            <li class="nav-item <?php echo( ($pageName === "newEntry") ? "active" : "" );  ?>">
-                <a class="nav-link" href="./newEntry.php">Crear Categoria</a>
+            <li class="nav-item <?php echo( ($pageName === "newCategory") ? "active" : "" );  ?>">
+                <a class="nav-link" href="./newCategory.php">Crear Categoria</a>
             </li>
             
         </ul>
