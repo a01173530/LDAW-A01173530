@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UsuarioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,8 @@ Auth::routes();
 
 Route::resource('libros', App\Http\Controllers\LibroController::class);
 
-Route::resource('categorias', App\Http\Controllers\CategoriaController::class)->middleware('auth');
+Route::resource('usuarios', App\Http\Controllers\UsuarioController::class);
+
+Route::resource('categorias', App\Http\Controllers\CategoriaController::class);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
