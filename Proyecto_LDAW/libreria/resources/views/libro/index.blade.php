@@ -28,7 +28,19 @@
                             <p>{{ $message }}</p>
                         </div>
                     @endif
-
+                    <div class="card-body">
+                        <form action="{{ route('libros.index') }}" method="get">
+                            <div class="fom-row">
+                                <div class="col-sm-4 my-1">
+                                    <input type="text"class="form-control" name="texto" value="{{ $texto }}">
+                                </div>
+                                <div class="col-auto my-1">
+                                <input type="submit" class="btn btn-primary" value="Buscar">
+                                </div>
+                            </div>
+                        </form>
+                    
+                    </div >
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-striped table-hover">

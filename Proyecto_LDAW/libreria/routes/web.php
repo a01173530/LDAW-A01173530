@@ -20,6 +20,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+//Route::resource('review', App\Http\Controllers\reviewController::class);
+
 Route::resource('libros', App\Http\Controllers\LibroController::class);
 
 Route::resource('usuarios', App\Http\Controllers\UsuarioController::class);

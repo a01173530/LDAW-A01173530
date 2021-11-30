@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Libro;
 use App\Models\Categoria;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 /**
  * Class LibroController
@@ -17,11 +18,17 @@ class LibroController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index( Request $request)
     {
-        $libros = Libro::paginate();
+        $texto=trim($request->get('texto'));
 
-        return view('libro.index', compact('libros'))
+        $libros = Libro::select('id','ISBN' , 'Titulo', 'Autor', 'AnoPublicacion', 'Paginas', 'Editorial','LugarPublicacion', 'categorias.nombreCategoria')->join('libros', 'libros.categoria_id', '=', 'categorias.id')->where('ISBN', 'LIKE', $texto)->orwhere('Titulo', 'LIKE', $texto)->paginate();
+        
+        //$libros = Libro::select('*')->where('ISBN', 'LIKE', $texto)->orwhere('Titulo', 'LIKE', $texto)->paginate();
+
+        //$libros = Libro::paginate();
+
+        return view('libro.index', compact('libros','texto'))
             ->with('i', (request()->input('page', 1) - 1) * $libros->perPage());
     }
 
