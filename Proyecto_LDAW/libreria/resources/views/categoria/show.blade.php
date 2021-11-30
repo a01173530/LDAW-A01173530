@@ -11,17 +11,17 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">Show Categoria</span>
+                            <span class="card-title">Mostrar Categoría</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('categorias.index') }}"> Back</a>
+                            <a class="btn btn-primary" href="{{ route('categorias.index') }}"> Regresar</a>
                         </div>
                     </div>
 
                     <div class="card-body">
                         
                         <div class="form-group">
-                            <strong>Nombrecategoria:</strong>
+                            <strong>Nombre de la categoría:</strong>
                             {{ $categoria->nombreCategoria }}
                         </div>
 

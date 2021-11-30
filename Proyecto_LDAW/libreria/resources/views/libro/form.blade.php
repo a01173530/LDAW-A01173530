@@ -3,7 +3,7 @@
         
         <div class="form-group">
             {{ Form::label('ISBN') }}
-            {{ Form::text('ISBN', $libro->ISBN, ['class' => 'form-control' . ($errors->has('ISBN') ? ' is-invalid' : ''), 'placeholder' => 'Isbn']) }}
+            {{ Form::text('ISBN', $libro->ISBN, ['class' => 'form-control' . ($errors->has('ISBN') ? ' is-invalid' : ''), 'placeholder' => 'ISBN']) }}
             {!! $errors->first('ISBN', '<div class="invalid-feedback">:message</p>') !!}
         </div>
         <div class="form-group">
@@ -17,12 +17,12 @@
             {!! $errors->first('Autor', '<div class="invalid-feedback">:message</p>') !!}
         </div>
         <div class="form-group">
-            {{ Form::label('AnoPublicacion') }}
-            {{ Form::text('AnoPublicacion', $libro->AnoPublicacion, ['class' => 'form-control' . ($errors->has('AnoPublicacion') ? ' is-invalid' : ''), 'placeholder' => 'Anopublicacion']) }}
+            {{ Form::label('Año de publicación') }}
+            {{ Form::text('AnoPublicacion', $libro->AnoPublicacion, ['class' => 'form-control' . ($errors->has('AnoPublicacion') ? ' is-invalid' : ''), 'placeholder' => 'Año de publicación']) }}
             {!! $errors->first('AnoPublicacion', '<div class="invalid-feedback">:message</p>') !!}
         </div>
         <div class="form-group">
-            {{ Form::label('Paginas') }}
+            {{ Form::label('Páginas') }}
             {{ Form::text('Paginas', $libro->Paginas, ['class' => 'form-control' . ($errors->has('Paginas') ? ' is-invalid' : ''), 'placeholder' => 'Paginas']) }}
             {!! $errors->first('Paginas', '<div class="invalid-feedback">:message</p>') !!}
         </div>
@@ -32,20 +32,20 @@
             {!! $errors->first('Editorial', '<div class="invalid-feedback">:message</p>') !!}
         </div>
         <div class="form-group">
-            {{ Form::label('LugarPublicacion') }}
-            {{ Form::text('LugarPublicacion', $libro->LugarPublicacion, ['class' => 'form-control' . ($errors->has('LugarPublicacion') ? ' is-invalid' : ''), 'placeholder' => 'Lugarpublicacion']) }}
+            {{ Form::label('Lugar de publicación') }}
+            {{ Form::text('LugarPublicacion', $libro->LugarPublicacion, ['class' => 'form-control' . ($errors->has('LugarPublicacion') ? ' is-invalid' : ''), 'placeholder' => 'Lugar de publicación']) }}
             {!! $errors->first('LugarPublicacion', '<div class="invalid-feedback">:message</p>') !!}
         </div>
 
         <div class="form-group">
-            {{ Form::label('categoria_id') }}
-            {{ Form::select('categoria_id',$categorias , $libro->categoria_id, ['class' => 'form-control' . ($errors->has('categoria_id') ? ' is-invalid' : ''), 'placeholder' => 'Categoria Id']) }}
+            {{ Form::label('Categoría del libro') }}
+            {{ Form::select('categoria_id',$categorias , $libro->categoria_id, ['class' => 'form-control' . ($errors->has('categoria_id') ? ' is-invalid' : ''), 'placeholder' => 'Categoría']) }}
             {!! $errors->first('categoria_id', '<div class="invalid-feedback">:message</p>') !!}
         </div>
 
 
     </div>
     <div class="box-footer mt20">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Registrar</button>
     </div>
 </div>

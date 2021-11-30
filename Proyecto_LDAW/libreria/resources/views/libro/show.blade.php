@@ -11,17 +11,17 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">Show Libro</span>
+                            <span class="card-title">Mostrar Libro</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('libros.index') }}"> Back</a>
+                            <a class="btn btn-primary" href="{{ route('libros.index') }}"> Regresar</a>
                         </div>
                     </div>
 
                     <div class="card-body">
                         
                         <div class="form-group">
-                            <strong>Isbn:</strong>
+                            <strong>ISBN:</strong>
                             {{ $libro->ISBN }}
                         </div>
                         <div class="form-group">
@@ -33,11 +33,11 @@
                             {{ $libro->Autor }}
                         </div>
                         <div class="form-group">
-                            <strong>Anopublicacion:</strong>
+                            <strong>Año de publicación:</strong>
                             {{ $libro->AnoPublicacion }}
                         </div>
                         <div class="form-group">
-                            <strong>Paginas:</strong>
+                            <strong>Páginas:</strong>
                             {{ $libro->Paginas }}
                         </div>
                         <div class="form-group">
@@ -45,7 +45,7 @@
                             {{ $libro->Editorial }}
                         </div>
                         <div class="form-group">
-                            <strong>Lugarpublicacion:</strong>
+                            <strong>Lugar de publicación:</strong>
                             {{ $libro->LugarPublicacion }}
                         </div>
                         <div class="form-group">
